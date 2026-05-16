@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color: #243036;
+  background: #fafbf8;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+}
+
+::selection {
+  background: rgba(111, 168, 154, 0.24);
+}
+
+@layer components {
+  .section-shell {
+    @apply mx-auto w-full max-w-7xl px-5 sm:px-6 lg:px-8;
+  }
+
+  .section-pad {
+    @apply py-20 sm:py-24;
+  }
+
+  .eyebrow {
+    @apply text-xs font-bold uppercase tracking-[0.18em] text-eucalyptus;
+  }
+
+  .section-title {
+    @apply mt-3 max-w-3xl text-3xl font-bold tracking-normal text-ink sm:text-4xl;
+  }
+
+  .section-copy {
+    @apply mt-4 max-w-3xl text-base leading-8 text-slate sm:text-lg;
+  }
+
+  .card {
+    @apply rounded-lg border border-line bg-white/[0.88] shadow-soft transition duration-300 ease-out;
+  }
+
+  .card-hover {
+    @apply hover:-translate-y-1 hover:border-foam hover:shadow-lift;
+  }
+
+  .tag {
+    @apply inline-flex items-center rounded-full border border-line bg-sage px-3 py-1 text-xs font-semibold text-ink;
+  }
+
+  .reveal {
+    animation: fadeUp 0.7s ease-out both;
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
