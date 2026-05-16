@@ -25,12 +25,12 @@ npm run build
 
 ## Deploy to GitHub Pages
 
-1. Update the `homepage` value in `package.json` with the correct GitHub username and repository name.
-2. Install dependencies with `npm install`.
-3. Deploy:
+This project deploys with GitHub Actions. Push changes to the `main` branch, then GitHub will build the Vite app and publish the `dist` folder to GitHub Pages.
 
-```bash
-npm run deploy
+For the clean URL `https://swestgat.github.io/`, the GitHub repository should be named:
+
+```text
+swestgat.github.io
 ```
 
-The deploy script builds the site and publishes the `dist` directory to GitHub Pages.
+In GitHub, go to **Settings -> Pages** and set **Source** to **GitHub Actions**.
