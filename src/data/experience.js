@@ -31,7 +31,7 @@ export const experience = [
     ],
   },
   {
-    role: 'Research Mentor / Graduate Student Recruitment Chair',
+    role: 'I CHANGED Research Mentor / Graduate Student Recruitment Chair',
     organization: 'Georgia Institute of Technology',
     dates: '2020-2024 / 2020-2023',
     highlights: [
