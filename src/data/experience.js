@@ -7,7 +7,7 @@ export const experience = [
       'Built scalable Python and SQL pipelines and MySQL databases for millions of environmental sensor records.',
       'Developed ML models for indoor air quality prediction and analysis.',
       'Presented findings through publications, talks, and stakeholder briefings.',
-      'Coordinated low-cost sensor work across a multi-institution research network.',
+      'Coordinated low-cost sensor data collection and work across a multi-institution research network.',
     ],
   },
   {
@@ -31,12 +31,20 @@ export const experience = [
     ],
   },
   {
-    role: 'I CHANGED Research Mentor / Graduate Student Recruitment Chair',
+    role: 'Research Team Lead & Mentor',
     organization: 'Georgia Institute of Technology',
-    dates: '2020-2024 / 2020-2023',
+    dates: '2020-2024',
     highlights: [
       'Led and mentored analytical teams of 3-8 researchers.',
-      'Coordinated department-wide recruitment efforts across 300+ students, faculty, and staff.',
+      'Mentored junior researchers from initial training on data analysis workflows to independent ownership of hypothesis creation, data collection, and results interpretation.',
+    ],
+  },
+  {
+    role: 'Graduate Recruitment Chair',
+    organization: 'Georgia Institute of Technology',
+    dates: '2020-2023',
+    highlights: [
+      'Coordinated department-wide graduate student recruitment efforts across 300+ students, faculty, and staff.',
       'Managed outreach events with 120+ attendees.',
     ],
   },

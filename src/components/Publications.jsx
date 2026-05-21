@@ -27,7 +27,19 @@ export default function Publications() {
               {publications.map((publication) => (
                 <article key={publication.title} className="border-b border-line pb-5 last:border-0 last:pb-0">
                   <h4 className="font-semibold leading-7 text-ink">{publication.title}</h4>
-                  <p className="mt-2 text-sm leading-6 text-slate">{publication.citation}</p>
+                  <p className="mt-2 text-sm leading-6 text-slate">
+                    {publication.citation}{' '}
+                    {publication.doiUrl && (
+                      <a
+                        href={publication.doiUrl}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="font-medium text-eucalyptus underline underline-offset-4"
+                      >
+                        {publication.doiUrl}
+                      </a>
+                    )}
+                  </p>
                 </article>
               ))}
             </div>

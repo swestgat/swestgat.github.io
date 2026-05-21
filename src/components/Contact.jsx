@@ -15,12 +15,6 @@ export default function Contact() {
       icon: Linkedin,
     },
     {
-      label: 'GitHub',
-      value: 'GitHub profile placeholder',
-      href: 'https://github.com/',
-      icon: Github,
-    },
-    {
       label: 'Resume',
       value: 'Download resume',
       href: `${import.meta.env.BASE_URL}resume.pdf`,
